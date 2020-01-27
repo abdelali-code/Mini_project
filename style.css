@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,4 +8,141 @@
 
 html {
     font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+body {
+    background-color: rgb(236, 236, 235);
+}
+
+/* for desktop */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    .items {
+        display: flex;
+        margin: 48px 0px;
+        position: relative;
+        top: 145px;
+        margin-bottom: 265px;
+    }
+    .first, .second, .third, .fourth {
+        width: 265px;
+        margin-left: 20px;
+        height: 250px;
+        background-color: rgb(255, 255, 255);
+        color: #000;
+        position: relative;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 10px 10px 10px rgb(209, 207, 207);
+    }
+    .first {
+        left: 132.5px;
+        border-top: 2px solid  hsl(180, 62%, 55%);
+    }
+    .second {
+        top: -135px;
+        left: 132.5px;
+        border-top: 2px solid  hsl(0, 78%, 62%);
+    }
+
+    .third {
+        bottom: -135px;
+        left: -152.5px;
+        border-top: 2px solid  hsl(34, 97%, 64%);
+    }
+    .fourth {
+        left: -152.5px;
+        border-top: 2px solid  hsl(212, 86%, 64%);
+    }
+    .img {
+        position: absolute;
+        bottom: 15px;
+        left: 70%;
+    }
+    .descri {
+        padding-top: 24px;
+        max-width: 500px;
+        text-align: center;
+        margin: auto;
+    }
+    .heading_bold {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    .heading {
+        font-size: 32px;
+        color: rgb(83, 79, 79);
+    }
+
+}
+
+
+
+/* small screen */
+
+@media (max-width: 1199px) 
+{
+    .container {
+        width: 375px;
+    }
+    .items {
+       display: flex;
+       flex-direction: column; 
+       margin-top: 48px;
+    }
+    .first, .second, .third, .fourth {
+        width: 265px;
+        height: 250px;
+        background-color: rgb(255, 255, 255);
+        color: #000;
+        position: relative;
+        border-radius: 10px;
+        padding: 20px;
+        margin: auto;
+        margin-bottom: 20px;
+        box-shadow: 10px 10px 10px rgb(209, 207, 207);
+    }
+    .first {
+        border-top: 2px solid  hsl(180, 62%, 55%);
+    }
+    .second {
+        border-top: 2px solid  hsl(0, 78%, 62%);
+    }
+
+    .third {
+        border-top: 2px solid  hsl(34, 97%, 64%);
+    }
+    .fourth {
+        border-top: 2px solid  hsl(212, 86%, 64%);
+    }
+    .img {
+        position: absolute;
+        bottom: 8px;
+        left: 70%;
+    }
+    .heading_bold {
+        font-weight: bold;
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+    
+    .heading {
+        color: rgb(83, 79, 79);
+        font-size: 28px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
